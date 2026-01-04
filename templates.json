@@ -1,31 +1,25 @@
-{
-  "version": "3",
-  "templates": [
-    {
-	  "id": 1,
-	  "type": 1,
-      "title": "JPa-PostgreSQL",
-      "description": "JPa-The most advanced open-source database",
-      "categories": ["database"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
-      "image": "postgres:latest",
-      "env": [
-        {
-          "name": "POSTGRES_USER",
-          "label": "Superuser"
-        },
-        {
-          "name": "POSTGRES_PASSWORD",
-          "label": "Superuser password"
-        }
-      ],
-      "ports": ["5432/tcp"],
-      "volumes": [
-        {
-          "container": "/var/lib/postgresql/data"
-        }
-      ]
-    }
-   ]
-}
+[
+  {
+    "type": 1,
+    "title": "JPa-PostgreSQL",
+    "description": "JPa - The most advanced open-source database",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+    "note": "Deploys a PostgreSQL database with persistent storage.",
+    "repository": {
+      "url": "https://raw.githubusercontent.com/gogoSK/skuska-template/main",
+      "stackfile": "postgres.yml"
+    },
+    "env": [
+      {
+        "name": "POSTGRES_USER",
+        "label": "Superuser"
+      },
+      {
+        "name": "POSTGRES_PASSWORD",
+        "label": "Superuser password"
+      }
+    ]
+  }
+]
