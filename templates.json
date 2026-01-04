@@ -3,8 +3,8 @@
   "templates": [
     {
 	  "type": 1,
-      "title": "PostgreSQL",
-      "description": "The most advanced open-source database",
+      "title": "JPa-PostgreSQL",
+      "description": "JPa-The most advanced open-source database",
       "categories": ["database"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
